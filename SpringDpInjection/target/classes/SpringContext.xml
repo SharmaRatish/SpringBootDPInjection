@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+http://www.springframework.org/schema/beans/spring-beans.xsd
+
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:annotation-config/>
+
+<context:component-scan base-package="com.sp.demo"/>
+
+<bean class="com.sp.demo.model.User" id="userbean">
+
+<property name="name" value="Virat"/>
+
+<property name="email" value="virat@gmail.com"/>
+
+<property name="type" value="Player"/>
+
+</bean>
+
+<bean class="com.sp.demo.model.Employee" id="useremp">
+
+<constructor-arg value="Rahul"/>
+
+<constructor-arg value="Developer"/>
+
+<constructor-arg value="Delhi"/>
+
+</bean>
+
+<bean class="com.sp.demo.model.Employee" id="useremp1"> 
+<constructor-arg value="Ratish"/>
+<constructor-arg value="Developer"/>
+<constructor-arg value="Gwalior"/>
+
+</bean>
+
+</beans>
